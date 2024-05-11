@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+.navBar {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(253, 165, 50);
+    height: 62px;
+    align-items: center;
+    padding: 13px;
+}
+
+.navitems {
+    display: flex;
+}
+
+.navitems li {
+    list-style: none;
+}
+
+.navitems li a {
+    text-decoration: none;
+    color: black;
+    padding: 0 10px;
+    font-size: 1.1rem;
+    transition: all 0.4s ease;
+}
+
+.navitems li a:hover {
+    color:#005500;
+}
+
+.action_btn a {
+    padding: 5px 10px;
+    text-decoration: none;
+    background-color:#005500;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.action_btn a:hover {
+    box-shadow: 1px 6px 7px 1px black;
+}
+
+#header {
+    height: 100vh;
+    background: url('gtx.jpg');
+}
+
+.conntent {
+    color: white;
+    justify-content: center;
+    height: 480px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.item-content {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.705);
+    width: 70%;
+    padding: 13px;
+}
+
+.conntent p {
+    font-size: 19px;
+}
+
+.menu_icon i {
+    font-size: 1.5em;
+}
+
+.menu_icon {
+    display: none;
+}
+
+#content-heading {
+    transition: all 0.4s ease;
+}
+
+#content-heading:hover {
+    transform: scale(1.3);
+}
+
+@media screen and (max-width: 540px) {
+    .navitems {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 62px;
+        left: 0;
+        background-color: rgb(253, 165, 50);
+        width: 100%;
+        display: none;
+    }
+
+    .navitems li {
+        margin: 12px 0;
+    }
+
+    .action_btn {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 258px;
+        justify-content: center;
+        align-items: center;
+        left: 0;
+        background-color: rgb(253, 165, 50);
+        width: 100vw;
+        display: none;
+    }
+
+    .action_btn a {
+        margin: 8px 0;
+    }
+
+    .menu_icon {
+        display: block;
+    }
+    .flex {
+        display: flex;
+    }
+}
